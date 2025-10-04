@@ -10,7 +10,7 @@ CORS(app) # Allows your frontend to communicate with this backend
 # --- API Key Configuration ---
 # Securely load the API key from an environment variable
 try:
-    API_KEY = os.environ.get("GOOGLE_API_KEY")
+    API_KEY = os.environ.get("AIzaSyC4zvhY_vgC5SAyiNluqaw4j4V1-DqLNJ8")
     if not API_KEY:
         print("Warning: GOOGLE_API_KEY environment variable not set.")
     genai.configure(api_key=API_KEY)
