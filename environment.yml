@@ -8,6 +8,5 @@ dependencies:
   - gunicorn
   - pytest
   - flake8
-  - pip
   - pip:
     - google-generativeai
