@@ -8,6 +8,6 @@ dependencies:
   - gunicorn
   - pytest
   - flake8
-  - pip  # Make sure pip itself is listed as a Conda dependency
+  - pip
   - pip:
-    - google-generativeai as genai # Tell Conda to install this package using pip
+    - google-generativeai
