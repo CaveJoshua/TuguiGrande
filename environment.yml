@@ -5,7 +5,9 @@ dependencies:
   - python=3.9
   - flask
   - flask-cors
-  - google-generativeai
   - gunicorn
   - pytest
   - flake8
+  - pip  # Make sure pip itself is listed as a Conda dependency
+  - pip:
+    - google-generativeai # Tell Conda to install this package using pip
