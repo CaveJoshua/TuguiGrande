@@ -10,4 +10,4 @@ dependencies:
   - flake8
   - pip  # Make sure pip itself is listed as a Conda dependency
   - pip:
-    - google-generativeai # Tell Conda to install this package using pip
+    - google-generativeai as genai # Tell Conda to install this package using pip
