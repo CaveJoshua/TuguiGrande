@@ -7,5 +7,5 @@ dependencies:
   - flask-cors
   - google-generativeai
   - gunicorn
-  - pytest  # Add pytest for testing
-  - flake8  # Add flake8 for linting
+  - pytest
+  - flake8
