@@ -1,0 +1,13 @@
+name: barangay-dashboard-env
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - flask
+  - flask-cors
+  - gunicorn
+  - pytest
+  - flake8
+  - pip
+  - pip:
+    - google-generativeai
