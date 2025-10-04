@@ -1,0 +1,115 @@
+/* --- New Styles for Data Table Page --- */
+.page-header {
+    margin-bottom: 1.5rem;
+}
+
+.search-and-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.page-search-bar {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    background: var(--card-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.page-search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-left: 0.5rem;
+    width: 100%;
+    color: var(--text-dark);
+}
+
+.action-btn {
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    color: var(--text-dark);
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.action-btn.primary {
+    background-color: var(--primary-blue);
+    color: white;
+    border-color: var(--primary-blue);
+}
+
+.action-btn:hover {
+    background-color: #f1f0f0;
+}
+.action-btn.primary:hover {
+    background-color: #2563eb;
+}
+
+.data-table-container {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+.data-table th, .data-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.data-table th {
+    font-weight: 600;
+    color: var(--text-light);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.status-tag {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-tag.active {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.status-tag.inactive {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.table-action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 2px;
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.table-action-btn.edit:hover { color: var(--primary-blue); }
+.table-action-btn.delete:hover { color: #ef4444; }

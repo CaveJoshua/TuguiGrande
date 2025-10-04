@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Bani Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0a6d540483.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-landmark"></i> <span>Barangay Bani</span></h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="#" data-page="dashboard"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li><a href="#" data-page="officials"><i class="fas fa-users-cog"></i><span>Officials Directory</span></a></li>
+                    <li><a href="#" data-page="residents"><i class="fas fa-address-book"></i><span>Resident Records</span></a></li>
+                    <li><a href="#" data-page="blotter"><i class="fas fa-file-alt"></i><span>Blotter Records</span></a></li>
+                    <li><a href="#" data-page="permits"><i class="fas fa-stamp"></i><span>Certificates & Permits</span></a></li>
+                    <li><a href="#" data-page="announcements"><i class="fas fa-bullhorn"></i><span>Announcements</span></a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" data-page="settings"><i class="fas fa-cog"></i><span>Settings</span></a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h1 id="main-header">Dashboard</h1>
+                <div class="header-actions">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="user-profile">
+                        <i class="fas fa-user-circle"></i>
+                        <div class="user-details">
+                            <span class="user-name">Admin User</span>
+                            <span class="user-role">Barangay Secretary</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="page-content">
+                <div id="dashboard-view">
+                    <section class="stats-cards">
+                        <div class="card"><div class="card-content"><p>Total Population</p><h2 id="totalPopulation">0</h2></div><div class="card-icon population"><i class="fas fa-users"></i></div></div>
+                        <div class="card"><div class="card-content"><p>Households</p><h2 id="totalHouseholds">0</h2></div><div class="card-icon households"><i class="fas fa-home"></i></div></div>
+                        <div class="card"><div class="card-content"><p>Active Blotter Cases</p><h2 id="activeBlotterCases">0</h2></div><div class="card-icon blotter"><i class="fas fa-exclamation-triangle"></i></div></div>
+                        <div class="card"><div class="card-content"><p>Permits Issued (Month)</p><h2 id="permitsIssued">0</h2></div><div class="card-icon permits"><i class="fas fa-file-signature"></i></div></div>
+                    </section>
+                    <section class="dashboard-body">
+                        <div class="announcements-container">
+                            <h3>Recent Announcements</h3>
+                            <ul id="announcementsList"></ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="chat-bubble" id="chat-bubble">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+    <div class="chat-window" id="chat-window">
+        <div class="chat-header">
+            <h4>Barangay Assistant</h4>
+            <button id="close-chat" class="close-chat-btn">&times;</button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="chat-message bot">Hello! How can I assist you with barangay services today?</div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chat-input" placeholder="Ask a question...">
+            <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
